@@ -25,7 +25,7 @@
                         display: ['DM Sans', 'sans-serif'],
                     },
                     colors: {
-                        zinc: { 50: '#fafafa', 100: '#f4f4f5', 200: '#e4e4e7', 300: '#d4d4d8', 400: '#a1a1aa', 500: '#71717a', 600: '#52525b', 700: '#3f3f46', 800: '#27272a', 850: '#1f1f22', 900: '#18181b', 950: '#09090b', 955: '#040405' },
+                        zinc: { 50: '#fafafa', 100: '#f4f4f5', 200: '#e4e4e7', 300: '#d4d4d8', 400: '#a1a1aa', 500: '#71717a', 600: '#52525b', 700: '#3f3f46', 800: '#27272a', 850: '#1f1f22', 900: '#18181b', 950: '#09090b' },
                         emerald: { 400: '#34d399', 500: '#10b981', 600: '#059669', 650: '#047857' },
                         amber: { 350: '#fcd34d', 400: '#fbbf24', 500: '#f59e0b' },
                         fuchsia: { 400: '#e879f9', 500: '#d946ef', 600: '#c026d3' },
@@ -44,7 +44,7 @@
         }
     </script>
 
-    <!-- Theme Persistence Script (Prevent FOUC) -->
+    <!-- Theme Persistence Script -->
     <script>
         if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             document.documentElement.classList.add('dark');
@@ -91,11 +91,6 @@
             .print-break-inside-avoid { break-inside: avoid; }
         }
         .hidden { display: none !important; }
-        
-        .pdf-exporting { background-color: #ffffff !important; background-image: none !important; color: #000 !important; }
-        .pdf-exporting .pattern-bg { background-image: none !important; }
-        .pdf-exporting .neo-shadow, .pdf-exporting .neo-shadow-lg, .pdf-exporting tr { page-break-inside: avoid !important; break-inside: avoid !important; }
-        .pdf-exporting header { margin-bottom: 20px !important; }
     </style>
 
     <svg style="display: none;">
@@ -129,7 +124,7 @@
     <div class="bg-emerald-500 text-zinc-950 font-mono font-black text-[10px] md:text-xs py-2 px-4 text-center tracking-widest border-b-3 border-zinc-950 z-50 relative uppercase shadow-sm">
         <span class="flex items-center justify-center gap-2">
             <svg class="w-4 h-4 animate-pulse-fast"><use href="#icon-check-circle"></use></svg>
-            MODE INTELIJEN FAKTUAL: DATA PASAR & HARGA TELAH DIVALIDASI PER 22 JUNE 2026.
+            MODE INTELIJEN FAKTUAL: DATA PASAR & HARGA TELAH DIVALIDASI PER 22 JUNI 2026.
         </span>
     </div>
 
@@ -146,7 +141,7 @@
                         </div>
                         <h1 class="text-4xl md:text-6xl font-display font-black uppercase tracking-tight text-zinc-950 dark:text-white leading-none">AGRI-INTELLIGENCE BRIEF</h1>
                         <p class="text-zinc-600 dark:text-zinc-400 text-sm md:text-base max-w-3xl font-medium leading-relaxed">
-                            Pusat analisis ketidakseimbangan pasar terpadu: memantau harga agrokimia, tren biostimulant, dan mengekstrak peluang strategis pemasaran berbasis data aktual per <strong class="text-zinc-950 dark:text-white">22 June 2026</strong>.
+                            Pusat analisis ketidakseimbangan pasar terpadu: memantau harga agrokimia, tren biostimulant, dan mengekstrak peluang strategis pemasaran berbasis data aktual per <strong class="text-zinc-950 dark:text-white">22 Juni 2026</strong>.
                         </p>
                     </div>
 
@@ -158,17 +153,13 @@
                         <button id="print-document-btn" class="w-12 h-12 bg-zinc-50 dark:bg-zinc-800 text-zinc-950 dark:text-white hover:bg-zinc-200 dark:hover:bg-zinc-700 border-2 border-zinc-950 neo-shadow neo-interactive neo-btn transition-all flex items-center justify-center cursor-pointer" title="Cetak Laporan">
                             <svg class="w-5 h-5"><use href="#icon-printer"></use></svg>
                         </button>
-                        <button id="export-pdf-btn" class="h-12 bg-zinc-950 text-white hover:bg-zinc-800 border-2 border-zinc-950 px-4 neo-shadow neo-interactive neo-btn transition-all flex items-center justify-center gap-2 cursor-pointer font-black text-[10px] uppercase tracking-widest" title="Unduh sebagai PDF">
-                            <svg class="w-4.5 h-4.5 text-emerald-400"><use href="#icon-download"></use></svg>
-                            <span class="hidden sm:inline">PDF</span>
-                        </button>
                     </div>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10 pt-6 border-t-2 border-zinc-200 dark:border-zinc-800">
                     <div class="flex flex-col">
                         <span class="text-zinc-500 dark:text-zinc-400 text-[10px] font-black tracking-widest mb-1.5 font-mono uppercase">Tanggal Audit</span>
-                        <span class="font-display font-black text-sm md:text-lg text-zinc-950 dark:text-white">Sabtu, 20 Juni 2026</span>
+                        <span class="font-display font-black text-sm md:text-lg text-zinc-950 dark:text-white">Senin, 22 Juni 2026</span>
                     </div>
                     <div class="flex flex-col">
                         <span class="text-zinc-500 dark:text-zinc-400 text-[10px] font-black tracking-widest mb-1.5 font-mono uppercase">Status Mode</span>
@@ -218,7 +209,7 @@
             <div class="absolute top-0 right-0 bg-zinc-950 text-white px-5 py-2 border-l-3 border-b-3 border-zinc-950 font-black text-[10px] tracking-widest uppercase">PROLINTAN FOCUS (RIIL)</div>
             <div class="border-b-2 border-zinc-200 dark:border-zinc-800 pb-5 mb-8">
                 <h2 class="text-3xl md:text-4xl font-display font-black text-zinc-950 dark:text-white uppercase tracking-tight flex items-center gap-3">
-                    <svg class="w-7 h-7 text-emerald-500"><use href="#icon-layers"></use></svg> Executive Summary (22 June 2026)
+                    <svg class="w-7 h-7 text-emerald-500"><use href="#icon-layers"></use></svg> Executive Summary (22 Juni 2026)
                 </h2>
                 <p class="text-sm text-zinc-500 dark:text-zinc-400 font-mono font-bold mt-2 uppercase tracking-wider">Sintesis dinamika harga dan identifikasi momentum penjualan taktis bagi tim lapangan.</p>
             </div>
@@ -230,7 +221,7 @@
                             <svg class="w-6 h-6 shrink-0"><use href="#icon-shield-alert"></use></svg>
                             <h4 class="font-display font-black uppercase text-zinc-950 dark:text-white text-lg leading-tight">Stok & Ketahanan Pangan</h4>
                         </div>
-                        <p class="text-sm text-zinc-700 dark:text-zinc-300 leading-relaxed font-medium">Stok CBP per 18 Juni 2026: <strong>5,2 juta ton</strong></p>
+                        <p class="text-sm text-zinc-700 dark:text-zinc-300 leading-relaxed font-medium">Stok CBP per 18 Juni 2026: <strong>5,2 juta ton</strong>. Cadangan beras nasional diprediksi mencukupi kebutuhan logistik hingga ~10 bulan ke depan.</p>
                     </div>
                 </div>
                 <div class="bg-zinc-50 dark:bg-zinc-950 border-2 border-zinc-950 p-6 rounded-none neo-shadow neo-interactive flex flex-col justify-between">
@@ -239,7 +230,7 @@
                             <svg class="w-6 h-6 shrink-0"><use href="#icon-trending-up"></use></svg>
                             <h4 class="font-display font-black uppercase text-zinc-950 dark:text-white text-lg leading-tight">Harga & Daya Beli Petani</h4>
                         </div>
-                        <p class="text-sm text-zinc-700 dark:text-zinc-300 leading-relaxed font-medium">cadangan beras nasional mencukupi kebutuhan hingga <strong>~10 bulan</strong></p>
+                        <p class="text-sm text-zinc-700 dark:text-zinc-300 leading-relaxed font-medium">NTP Tanaman Pangan Mei 2026: <strong>113,79</strong> (tertinggi di 2026). Petani sangat mampu membeli produk premium.</p>
                     </div>
                 </div>
                 <div class="bg-zinc-50 dark:bg-zinc-950 border-2 border-zinc-950 p-6 rounded-none neo-shadow neo-interactive flex flex-col justify-between">
@@ -248,7 +239,7 @@
                             <svg class="w-6 h-6 shrink-0"><use href="#icon-zap"></use></svg>
                             <h4 class="font-display font-black uppercase text-zinc-950 dark:text-white text-lg leading-tight">Program & Infrastruktur</h4>
                         </div>
-                        <p class="text-sm text-zinc-700 dark:text-zinc-300 leading-relaxed font-medium">NTP Tanaman Pangan Mei 2026: <strong>113,79</strong> (tertinggi di 2026)</p>
+                        <p class="text-sm text-zinc-700 dark:text-zinc-300 leading-relaxed font-medium">Pemerintah mengalokasikan Rp 4 Triliun untuk pompanisasi dan perluasan cetak sawah baru di seluruh Indonesia menghadapi ancaman kekeringan.</p>
                     </div>
                 </div>
             </div>
@@ -264,7 +255,7 @@
                 </div>
             </div>
             <div id="dashboard-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Dashboard content injected by JS -->
+                <!-- Div ini akan diisi via JavaScript -->
             </div>
         </section>
 
@@ -289,8 +280,7 @@
             </div>
 
             <div id="pesticide-content-container" class="space-y-8">
-                <!-- Data injected by JS -->
-                <div id="pesticide-tables-container" class="grid grid-cols-1 md:grid-cols-2 gap-8"></div>
+                <div id="pesticide-tables-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
                 <div id="pesticide-news-recs-container" class="grid grid-cols-1 lg:grid-cols-2 gap-8"></div>
             </div>
         </section>
@@ -304,10 +294,9 @@
                     <p class="text-sm text-zinc-500 dark:text-zinc-400 font-mono font-bold uppercase tracking-wider mt-2">Harga FOB Pelabuhan China (B2B) — <span class="text-fuchsia-500">*Estimasi Industri</span>. Kurs: 1 USD = 6,78 CNY.</p>
                 </div>
             </div>
-            
+
             <div id="bio-loading-overlay" style="display:none" role="status" aria-live="polite" class="bg-white dark:bg-zinc-900 border-3 border-zinc-950 p-12 flex flex-col items-center justify-center neo-shadow-lg">
                 <svg class="w-12 h-12 text-fuchsia-500 animate-spin-slow mb-4" aria-hidden="true"><use href="#icon-refresh-cw"></use></svg>
-                <h3 class="font-display font-black uppercase text-lg tracking-widest text-zinc-950 dark:text-white mb-2">MENGAMBIL DATA BIOSTIMULANT...</h3>
                 <div class="w-64 h-1.5 bg-zinc-200 dark:bg-zinc-800 overflow-hidden"><div class="h-full bg-fuchsia-500 w-1/3 animate-loading-bar"></div></div>
             </div>
 
@@ -319,7 +308,7 @@
                     <div class="space-y-5">
                         <div class="bg-white dark:bg-zinc-950 border-2 border-zinc-950 p-3 text-xs leading-relaxed font-medium">
                             <span class="font-black block mb-2 uppercase tracking-wider border-b border-dashed border-zinc-300 dark:border-zinc-700 pb-1 text-fuchsia-700 dark:text-fuchsia-400">4 Pilar Biological (ABG):</span>
-                            <ul class="list-disc pl-4 text-zinc-800 dark:text-zinc-200 space-y-1">
+                            <ul class="list-disc pl-4 text-zinc-800 dark:text-zinc-200 space-y-1 mt-2">
                                 <li><strong>Differentiation</strong> — Harus tervalidasi lapangan.</li>
                                 <li><strong>Scalability</strong> — Kapasitas manufaktur.</li>
                                 <li><strong>IP Ownership</strong> — Paham regulasi & paten.</li>
@@ -331,16 +320,16 @@
 
                 <div class="bg-white dark:bg-zinc-900 border-3 border-zinc-950 rounded-none overflow-hidden neo-shadow lg:col-span-2">
                     <div class="bg-zinc-950 text-white p-3 text-xs font-black tracking-widest uppercase flex justify-between">
-                        <span>Katalog Harga FOB China (B2B) <span class="text-zinc-400 normal-case tracking-normal ml-1">(*estimasi industri)</span></span>
+                        <span>Katalog Harga FOB China <span class="text-zinc-400 normal-case tracking-normal ml-1">(*estimasi industri)</span></span>
                         <span class="text-fuchsia-400">Data v28 (Kurs: 6,78)</span>
                     </div>
                     <div class="overflow-x-auto">
                         <table class="w-full text-left text-sm font-medium">
                             <thead class="border-b-2 border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-950 font-mono text-[10px] uppercase text-zinc-500">
-                                <tr><th class="p-4">Kategori Produk</th><th class="p-4">Rentang Harga (USD)</th><th class="p-4 hidden sm:table-cell">Supplier Referensi</th></tr>
+                                <tr><th class="p-4">Kategori Produk</th><th class="p-4">Rentang Harga (USD)</th><th class="p-4">Supplier Referensi</th></tr>
                             </thead>
                             <tbody id="biostimulant-table-body" class="divide-y-2 divide-zinc-100 dark:divide-zinc-800">
-                                <!-- Data injected by JS -->
+                                <!-- Data diisi via JS -->
                             </tbody>
                         </table>
                     </div>
@@ -370,7 +359,7 @@
                                 <h4 class="font-bold text-sm text-zinc-900 dark:text-zinc-100">Daya Beli Petani Memuncak</h4>
                             </div>
                             <p class="text-xs text-zinc-600 dark:text-zinc-400 font-medium leading-relaxed">
-                                NTP Mei 2026 di level <strong>113,79</strong> — tertinggi 2026. Indeks harga petani padi <strong>147,97</strong> (tertinggi 7 tahun). Harga gabah naik dari Rp5.000 ke <strong>Rp6.500/kg</strong>. Petani punya modal berinvestasi: momentum emas untuk up-selling nutrisi premium, fungisida sistemik, dan biostimulan.
+                                NTP Mei 2026 di level <strong>113,79</strong>. Indeks harga petani padi <strong>147,97</strong>. Harga gabah naik dari Rp5.000 ke <strong>Rp6.500/kg</strong>. Momentum emas untuk up-selling nutrisi premium, fungisida sistemik, dan biostimulan.
                             </p>
                         </div>
                         <div>
@@ -379,34 +368,7 @@
                                 <h4 class="font-bold text-sm text-zinc-900 dark:text-zinc-100">Cukup Hingga 10 Bulan Kedepan</h4>
                             </div>
                             <p class="text-xs text-zinc-600 dark:text-zinc-400 font-medium leading-relaxed">
-                                CBP per 18 Juni: <strong>5,2 juta ton</strong>. Cadangan cukup hingga ~10 bulan (Juli 2026–April 2027). Inflasi beras melandai <strong>0,38%</strong>. Bulog sewa gudang tambahan 2,2 juta ton. Fokus pemerintah: jaga produksi, bukan impor — artinya input pertanian (pupuk, pestisida) tetap prioritas belanja.
-                            </p>
-                        </div>
-                        <div>
-                            <div class="flex items-center gap-2 mb-2">
-                                <span class="bg-blue-100 text-blue-800 border border-blue-500 text-[10px] font-black px-2 py-0.5 uppercase tracking-widest">El Nino & Kemarau</span>
-                                <h4 class="font-bold text-sm text-zinc-900 dark:text-zinc-100">81.000 Ha Terbakar, Siaga Karhutla</h4>
-                            </div>
-                            <p class="text-xs text-zinc-600 dark:text-zinc-400 font-medium leading-relaxed">
-                                El Niño + IOD positif → kemarau ekstrem diprediksi Juli–September. <strong>~60% jaringan irigasi rusak</strong>. Pemerintah siapkan 15.000 unit irigasi perpompaan + pompanisasi Rp4 triliun. Peluang: fungisida preventif, biostimulan anti-stress, dan herbisida pra-tumbuh menjelang musim tanam kedua.
-                            </p>
-                        </div>
-                        <div>
-                            <div class="flex items-center gap-2 mb-2">
-                                <span class="bg-red-100 text-red-800 border border-red-500 text-[10px] font-black px-2 py-0.5 uppercase tracking-widest">Hama & Penyakit</span>
-                                <h4 class="font-bold text-sm text-zinc-900 dark:text-zinc-100">Tikus, Penggerek, Antraknosa Meningkat</h4>
-                            </div>
-                            <p class="text-xs text-zinc-600 dark:text-zinc-400 font-medium leading-relaxed">
-                                Tikus di Garut (90 ha), Tuban, Situbondo (123,8 ha). Penggerek batang di Kuningan (50 ha, Gerdal OPT). Cabai Batang: <strong>60% tanaman rusak</strong> akibat antraknosa. Kelembapan tinggi pasca-hujan → ledakan patogen. Push kampanye insektisida + fungisida terprogram di Jabar & Jateng.
-                            </p>
-                        </div>
-                        <div>
-                            <div class="flex items-center gap-2 mb-2">
-                                <span class="bg-fuchsia-100 text-fuchsia-800 border border-fuchsia-500 text-[10px] font-black px-2 py-0.5 uppercase tracking-widest">Program Pemerintah</span>
-                                <h4 class="font-bold text-sm text-zinc-900 dark:text-zinc-100">Benih Rp9,95T & Bongkar Ratoon 54.897 Ha</h4>
-                            </div>
-                            <p class="text-xs text-zinc-600 dark:text-zinc-400 font-medium leading-relaxed">
-                                Distribusi benih Rp9,95 triliun (2025–2027) untuk 870.000 ha kebun rakyat. Jatim targetkan bongkar ratoon tebu <strong>54.897 ha</strong> (kontribusi 51% gula nasional). SISKA integrasi sapi-sawit: potensi <strong>1,3 juta ekor</strong> secara nasional. Peluang bundling input ke kelompok tani penerima program.
+                                CBP per 18 Juni: <strong>5,2 juta ton</strong>. Fokus pemerintah murni menjaga produksi, yang artinya input pertanian tetap menjadi prioritas belanja nasional.
                             </p>
                         </div>
                     </div>
@@ -423,83 +385,28 @@
                                     🎯 Skenario: NTP Tinggi → Upselling Premium
                                 </h4>
                                 <p class="text-xs text-zinc-700 dark:text-zinc-300 font-medium mb-3 leading-relaxed">
-                                    Daya beli petani di level tertinggi 34 tahun. Ini bukan waktu untuk diskon — ini waktu untuk <strong>value selling</strong>. Petani mau bayar lebih jika ada bukti ROI.
+                                    Petani mau bayar lebih jika ada bukti ROI. Ini waktu untuk <strong>value selling</strong>.
                                 </p>
-                                <div class="border-t border-dashed border-zinc-300 dark:border-zinc-700 pt-3">
-                                    <strong class="text-[10px] uppercase font-black tracking-widest block mb-2 text-emerald-600 dark:text-emerald-400">Taktik Sales:</strong>
-                                    <ul class="list-disc pl-4 text-xs text-zinc-800 dark:text-zinc-200 font-semibold space-y-2">
-                                        <li>Bawa data NTP + harga gabah sebagai pembuka percakapan dengan petani.</li>
-                                        <li>Tawarkan paket "Premium Protection": fungisida sistemik + biostimulan + nutrisi mikro.</li>
-                                        <li>Demo plot di sentra komoditas kopi, cabai, dan padi — tunjukkan yield gap.</li>
-                                    </ul>
-                                </div>
                             </div>
                             <div class="bg-white dark:bg-zinc-950 border-2 border-amber-500 p-4">
                                 <h4 class="font-black text-sm md:text-base text-zinc-900 dark:text-white uppercase flex items-center gap-2 mb-2">
                                     🔥 Skenario: El Nino → Mitigasi Stress
                                 </h4>
                                 <p class="text-xs text-zinc-700 dark:text-zinc-300 font-medium mb-3 leading-relaxed">
-                                    Kemarau ekstrem diprediksi Juli–September. 60% irigasi rusak. Petani butuh solusi anti-stress, bukan sekadar pupuk biasa.
+                                    Petani butuh solusi anti-stress. Front-load stok biostimulan anti-stress dan fungisida preventif.
                                 </p>
-                                <div class="border-t border-dashed border-zinc-300 dark:border-zinc-700 pt-3">
-                                    <strong class="text-[10px] uppercase font-black tracking-widest block mb-2 text-amber-600 dark:text-amber-400">Taktik Sales:</strong>
-                                    <ul class="list-disc pl-4 text-xs text-zinc-800 dark:text-zinc-200 font-semibold space-y-2">
-                                        <li>Front-load stok biostimulan anti-stress (asam amino, fulvic acid) ke agen.</li>
-                                        <li>Push fungisida preventif sebelum musim kemarau puncak.</li>
-                                        <li>Targetkan wilayah irigasi perpompaan baru — petani baru olah lahan = butuh herbisida pra-tumbuh.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="bg-white dark:bg-zinc-950 border-2 border-emerald-500 p-4">
-                                <h4 class="font-black text-sm md:text-base text-zinc-900 dark:text-white uppercase flex items-center gap-2 mb-2">
-                                    🌱 Skenario: Program Pemerintah → Akses Langsung
-                                </h4>
-                                <p class="text-xs text-zinc-700 dark:text-zinc-300 font-medium mb-3 leading-relaxed">
-                                    Benih Rp9,95T, bongkar ratoon 54.897 ha, SISKA 1,3 juta ekor — semua butuh input pendamping.
-                                </p>
-                                <div class="border-t border-dashed border-zinc-300 dark:border-zinc-700 pt-3">
-                                    <strong class="text-[10px] uppercase font-black tracking-widest block mb-2 text-emerald-600 dark:text-emerald-400">Taktik Sales:</strong>
-                                    <ul class="list-disc pl-4 text-xs text-zinc-800 dark:text-zinc-200 font-semibold space-y-2">
-                                        <li>Mapping kelompok tani penerima benih & bongkar ratoon — langsung tawarkan paket input.</li>
-                                        <li>Untuk SISKA: tawarkan pupuk organik & probiotik sapi.</li>
-                                        <li>Koordinasi dengan dinas pertanian daerah untuk akses program.</li>
-                                    </ul>
-                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Konteks China (Supporting, Bukan Utama) -->
                     <div class="bg-zinc-50 dark:bg-zinc-900 border-2 border-zinc-300 dark:border-zinc-700 rounded-none p-5 neo-shadow">
                         <h4 class="font-display font-black text-zinc-700 dark:text-zinc-400 text-xs uppercase mb-3 flex items-center gap-2 tracking-widest">
                             <svg class="w-4 h-4"><use href="#icon-globe"></use></svg> Konteks Harga China (Supporting Data)
                         </h4>
                         <p class="text-[11px] text-zinc-500 dark:text-zinc-400 leading-relaxed font-medium mb-3">
-                            Harga bahan aktif China stabil pasca-libur Dragon Boat Festival (Jun 19-25). Tidak ada pergerakan signifikan. Kurs USD/CNY stabil di <strong>6,78</strong>.
+                            Harga bahan aktif China stabil pasca-libur. Kurs USD/CNY stabil di <strong>6,78</strong>.
                         </p>
-                        <div class="grid grid-cols-2 gap-2 text-[10px]">
-                            <div class="bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 p-2">
-                                <span class="font-black text-zinc-700 dark:text-zinc-300 block">Klorotalonil</span>
-                                <span class="text-red-500 font-black">+41,6% YoY</span>
-                                <span class="text-zinc-400 block text-[9px]">Firm/rising — momentum fungisida</span>
-                            </div>
-                            <div class="bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 p-2">
-                                <span class="font-black text-zinc-700 dark:text-zinc-300 block">Glifosat</span>
-                                <span class="text-amber-500 font-black">+10,16% YoY</span>
-                                <span class="text-zinc-400 block text-[9px]">Sulfur cost +160% YTD</span>
-                            </div>
-                            <div class="bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 p-2">
-                                <span class="font-black text-zinc-700 dark:text-zinc-300 block">Tebuconazole</span>
-                                <span class="text-red-500 font-black">+11,32% YoY</span>
-                                <span class="text-zinc-400 block text-[9px]">Triazole demand firm</span>
-                            </div>
-                            <div class="bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 p-2">
-                                <span class="font-black text-zinc-700 dark:text-zinc-300 block">Biostimulan</span>
-                                <span class="text-emerald-500 font-black">+6–29% YoY</span>
-                                <span class="text-zinc-400 block text-[9px]">Humat +28,6% terdepan</span>
-                            </div>
-                        </div>
-                        <p class="text-[9px] text-zinc-400 mt-2 italic">Sumber: CCPIA CAPI, ABG, Status Update 27 Jun 2026</p>
+                        <p class="text-[9px] text-zinc-400 mt-2 italic">Sumber: CCPIA CAPI, ABG, Status Update 22 Jun 2026</p>
                     </div>
                 </div>
             </div>
@@ -511,19 +418,17 @@
                     <h2 class="text-3xl md:text-4xl font-display font-black text-zinc-950 dark:text-white uppercase tracking-tight flex items-center gap-3">
                         <svg class="w-7 h-7 text-blue-500"><use href="#icon-globe"></use></svg> Umpan Berita Global & Regional
                     </h2>
-                    <p class="text-sm text-zinc-500 dark:text-zinc-400 font-mono font-bold uppercase tracking-wider mt-2">Daftar berita pertanian terkini hingga pertengahan Juni 2026. Semua berita berhasil dimuat.</p>
+                    <p class="text-sm text-zinc-500 dark:text-zinc-400 font-mono font-bold uppercase tracking-wider mt-2">Daftar berita pertanian terkini hingga pertengahan Juni 2026.</p>
                 </div>
             </div>
 
             <div id="news-loading-overlay" style="display:none" role="status" aria-live="polite" class="py-16 flex flex-col items-center justify-center bg-zinc-100 dark:bg-zinc-900 border-2 border-dashed border-zinc-300 dark:border-zinc-700">
                 <svg class="w-10 h-10 text-blue-500 animate-spin-slow mb-4" aria-hidden="true"><use href="#icon-refresh-cw"></use></svg>
-                <h3 class="font-display font-black uppercase text-sm tracking-widest text-zinc-950 dark:text-white mb-4">MENGAMBIL DATA BERITA TERKINI...</h3>
                 <div class="w-48 h-1.5 bg-zinc-200 dark:bg-zinc-800 overflow-hidden"><div class="h-full bg-blue-500 w-1/3 animate-loading-bar"></div></div>
             </div>
 
-            <!-- Solid Structure Grid -->
             <div id="news-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 md:gap-8 items-stretch">
-                <!-- Data injected by JS -->
+                <!-- Diisi via JavaScript -->
             </div>
             
             <div id="load-more-news-container" class="text-center mt-8 hidden no-print">
@@ -539,7 +444,7 @@
                     <h2 class="text-3xl md:text-4xl font-display font-black text-zinc-950 dark:text-white uppercase tracking-tight flex items-center gap-3">
                         <svg class="w-7 h-7 text-amber-500"><use href="#icon-file-check"></use></svg> Matriks Audit Faktual (Positif)
                     </h2>
-                    <p class="text-sm text-zinc-500 dark:text-zinc-400 font-mono font-bold uppercase tracking-wider mt-2">Hanya memuat klaim terverifikasi untuk digunakan sebagai bahan edukasi pelanggan.</p>
+                    <p class="text-sm text-zinc-500 dark:text-zinc-400 font-mono font-bold uppercase tracking-wider mt-2">Memuat klaim terverifikasi untuk digunakan sebagai bahan edukasi pelanggan.</p>
                 </div>
                 <div class="flex items-center gap-3 w-full md:w-auto shrink-0 no-print">
                     <div class="relative w-full md:w-80">
@@ -565,7 +470,7 @@
                             </tr>
                         </thead>
                         <tbody id="verification-table-body" class="text-sm divide-y-2 divide-zinc-200 dark:divide-zinc-800 font-medium bg-white dark:bg-zinc-900">
-                            <!-- Data injected by JS -->
+                            <!-- Diisi via JavaScript -->
                         </tbody>
                     </table>
                 </div>
@@ -592,197 +497,19 @@
 
     <script>
         const dashboardMetrics = [
-            { id: "hortikultura", category: "Sayuran & Umbi", emoji: "🧅", title: "Bawang & Kentang Solid", tagColor: "amber", metrics: [{ label: "Bawang Merah (Petani)", value: "Rp 32.500 / kg", status: "STABIL" }, { label: "Tomat (Petani)", value: "Rp 6.500 / kg", status: "STABIL" }, { label: "Kentang (Petani)", value: "Rp 13.500 / kg", status: "NAIK" }], statusText: "Harga tebas/panen di tingkat petani masih memberi margin tebal. Prioritaskan penawaran Fungisida Kontak preventif dan pupuk mikro untuk melindungi sisa panen." },
-            { id: "horti-cabai", category: "Hortikultura (Cabai)", emoji: "🌶️", title: "Daya Beli Petani Cabai Terjaga", tagColor: "red", metrics: [{ label: "Rawit Merah (Petani)", value: "Rp 78.000–85.000 / kg", status: "STABIL" }, { label: "Merah Keriting (Petani)", value: "Rp 45.000 / kg", status: "STABIL" }], statusText: "Meskipun fluktuatif, nilai jual panen cabai tetap jauh di atas titik impas produksi. Momentum emas untuk melakukan up-selling paket bio-stimulan dan fungisida premium." },
-            { id: "perkebunan-kopi", category: "Perkebunan Kopi", emoji: "☕", title: "Rekor Kopi Dorong Investasi", tagColor: "emerald", metrics: [{ label: "Robusta (Asalan Petani)", value: "Rp 81.000 / kg", status: "LONJAKAN" }, { label: "Arabika (Green Bean Petani)", value: "Rp 120.000 / kg", status: "NAIK" }], statusText: "Defisit pasokan global memicu harga kopi ekstrem. Petani sangat memiliki modal untuk berinvestasi. Gencarkan program nutrisi daun pembungaan dan pencegah rontok." },
-            { id: "pangan-pokok", category: "Padi & Jagung", emoji: "🌾", title: "Panen Pangan Aman di Atas HPP", tagColor: "blue", metrics: [{ label: "GKP Padi (Petani)", value: "Rp 6.500 / kg", status: "TURUN" }, { label: "Jagung Pipil (Petani)", value: "Rp 5.200 / kg", status: "STABIL" }], statusText: "Harga panen GKP dan Jagung nyaman di atas standar BEP/HPP. Profitabilitas petani pangan terjaga kuat. Teruskan kampanye herbisida pra-tumbuh dan pupuk pelengkap cair." },
-            { id: "sawit-karet", category: "Perkebunan Utama", emoji: "🌴", title: "Pemulihan Daya Beli Pekebun", tagColor: "blue", metrics: [{ label: "TBS Sawit (Petani Plasma)", value: "Rp 2.950 / kg", status: "NAIK" }, { label: "Karet Lump (Petani KKK 50%)", value: "Rp 13.500 / kg", status: "NAIK" }], statusText: "Harga TBS menguat mendekati level psikologis 3.000, dan karet merangkak naik. Segera ekskalasi penetrasi herbisida sistemik kemasan besar di area Sumatera dan Kalimantan." },
-            { id: "benih-strategis", category: "Program Benih Perkebunan", emoji: "🌱", title: "Benih Rp 9,95 Triliun 2025-2027", tagColor: "emerald", metrics: [{ label: "Anggaran Benih", value: "Rp 9,95 T", status: "PROSES" }, { label: "Bibit Kakao & Kelapa", value: "280 Juta Batang", status: "TERCAPAI" }, { label: "Target Kebun Rakyat", value: "870.000 Ha", status: "MONITOR" }], statusText: "Kementan menyalurkan benih kelapa, kakao, tebu, kopi, mete, pala, lada dikawal KPK/TNI-Polri. Momentum riil untuk mendorong pupuk mikro starter dan perlindungan bibit (fungisida + insektisida) ke kelompok tani penerima." },
-            { id: "bawang-putih", category: "Swasembada Bawang Putih", emoji: "🧄", title: "Target Swasembada 3 Tahun", tagColor: "amber", metrics: [{ label: "Target Lahan", value: "100.000 Ha", status: "PROSES" }, { label: "Pembibitan APBN 2026", value: "5.000 Ha", status: "MONITOR" }, { label: "BUMN + Swasta", value: "20.000 Ha", status: "MONITOR" }], statusText: "Sentra Sembalun (NTB), Temanggung (Jateng), Humbang Hasundutan (Sumut). Petani bawang putih butuh pupuk organik, fungisida preventif, dan biostimulan anti-stress pada fase pembentukan umbi." },
-            { id: "pompanisasi", category: "Pompanisasi & Infrastruktur", emoji: "💧", title: "Rp 4 Triliun Pompa Air & Irigasi", tagColor: "blue", metrics: [{ label: "Anggaran Pompanisasi", value: "Rp 4 T", status: "PROSES" }, { label: "Unit Pompa Air", value: "57.000 Unit", status: "TERCAPAI" }, { label: "Layanan Lahan", value: "~1 Juta Ha", status: "TERCAPAI" }], statusText: "PLN 100% di Sumbawa, 3 titik Tasikmalaya, rehab Bontonyeleng Sulsel. Air terjamin → petani siap olah lahan. Front-loading herbisida pra-tumbuh dan pupuk ke kelompok tani penerima irigasi perpompaan." },
-            { id: "pupuk-indonesia", category: "Pupuk & Agrokimia", emoji: "⚗️", title: "PIHC Laba +230% YoY", tagColor: "emerald", metrics: [{ label: "Laba PIHC YoY", value: "+230%", status: "LONJAKAN" }, { label: "Ekspor ke Australia", value: "Rp 7 Triliun", status: "POSITIF" }, { label: "Harga Urea Subsidi", value: "Rp 1.800/kg (-20%)", status: "POSITIF" }], statusText: "Pupuk Indonesia booming: laba naik 230%, ekspor perdana ke Australia Rp 7T, 2.231 izin distributor dicabut. Harga urea subsidi turun 20%. Petani makin mampu beli pupuk pelengkap & biostimulan." },
-            { id: "el-nino", category: "El Nino & Mitigasi", emoji: "🔥", title: "81.000 Ha Terbakar, Siaga Kekeringan", tagColor: "red", metrics: [{ label: "Lahan Terbakar", value: "81.000 Ha", status: "LONJAKAN" }, { label: "Sekat Kanal Dibutuhkan", value: "540.000", status: "AWAS" }, { label: "Pompanisasi", value: "Rp 4 T", status: "SOLUSI" }], statusText: "El Nino 2026 mengancam kekeringan ekstrem dan karhutla. Pemerintah genjot pompanisasi, rehab irigasi, dan tanam serentak 25 provinsi. Momentum krusial menjual fungisida preventif + biostimulan anti-stress sebelum musim kemarau." },
-            { id: "hama-opt", category: "Serangan Hama (Juni 2026)", emoji: "🐀", title: "Tikus, Penggerek Batang, & Cabai", tagColor: "red", metrics: [{ label: "Tikus (Garut)", value: "90 Ha Turun", status: "SOLUSI" }, { label: "Penggerek Batang (Kuningan)", value: "50 Ha", status: "AWAS" }, { label: "Cabai Batang", value: "60% Rusak", status: "LONJAKAN" }], statusText: "Tikus di Garut (90 ha), penggerek batang Kuningan (Gerda OPT serentak), antraknosa cabai Batang (60% tanaman rusak). Push kampanye Insektisida + Fungisida terprogram. Sektor pestisida akan tinggi di Jabar & Jateng." },
-            { id: "supply-chain", category: "Rantai Pasok", emoji: "🚢", title: "Suplai Kompetitor Terhambat", tagColor: "zinc", metrics: [{ label: "Lead Time Impor China", value: "6 - 8 Minggu", status: "AWAS" }], statusText: "Manfaatkan jeda ketersediaan barang kompetitor asing. Amankan rak kios dengan stok produk kita. Tekankan ketersediaan barang daripada menurunkan harga." },
-            { id: "macro-economic", category: "Makro Ekonomi", emoji: "📉", title: "Rupiah Tertekan & Inflasi Terjaga", tagColor: "amber", metrics: [{ label: "Kurs (USD/IDR)", value: "Rp 16.350", status: "AWAS" }, { label: "Inflasi Nasional", value: "3,08%", status: "STABIL" }, { label: "GDP Growth", value: "5,05%", status: "POSITIF" }], statusText: "Kurs tertahan di atas Rp 16.300/USD. Margin impor tergerus. Gunakan sebagai argumen urgensi agar Grosir segera Lock PO. Inflasi 3,08% pasca-Idul Adha terjaga — daya beli petani stabil." }
+            { id: "hortikultura", category: "Sayuran & Umbi", emoji: "🧅", title: "Bawang & Kentang Solid", tagColor: "amber", metrics: [{ label: "Bawang Merah (Petani)", value: "Rp 32.500 / kg", status: "STABIL" }, { label: "Kentang (Petani)", value: "Rp 13.500 / kg", status: "NAIK" }], statusText: "Prioritaskan penawaran Fungisida Kontak preventif dan pupuk mikro untuk melindungi sisa panen." },
+            { id: "horti-cabai", category: "Hortikultura (Cabai)", emoji: "🌶️", title: "Daya Beli Petani Cabai Terjaga", tagColor: "red", metrics: [{ label: "Rawit Merah (Petani)", value: "Rp 78.000–85.000 / kg", status: "STABIL" }], statusText: "Momentum emas untuk melakukan up-selling paket bio-stimulan dan fungisida premium." },
+            { id: "perkebunan-kopi", category: "Perkebunan Kopi", emoji: "☕", title: "Rekor Kopi Dorong Investasi", tagColor: "emerald", metrics: [{ label: "Robusta (Asalan Petani)", value: "Rp 81.000 / kg", status: "LONJAKAN" }], statusText: "Defisit pasokan global memicu harga kopi ekstrem. Petani sangat memiliki modal untuk berinvestasi." },
+            { id: "pangan-pokok", category: "Padi & Jagung", emoji: "🌾", title: "Panen Pangan Aman di Atas HPP", tagColor: "blue", metrics: [{ label: "GKP Padi (Petani)", value: "Rp 6.500 / kg", status: "TURUN" }], statusText: "Profitabilitas petani pangan terjaga kuat. Teruskan kampanye herbisida pra-tumbuh." },
+            { id: "sawit-karet", category: "Perkebunan Utama", emoji: "🌴", title: "Pemulihan Daya Beli Pekebun", tagColor: "blue", metrics: [{ label: "TBS Sawit", value: "Rp 2.950 / kg", status: "NAIK" }], statusText: "Harga TBS menguat mendekati level psikologis 3.000. Segera ekskalasi penetrasi herbisida sistemik." },
+            { id: "pupuk-indonesia", category: "Pupuk & Agrokimia", emoji: "⚗️", title: "PIHC Laba +230% YoY", tagColor: "emerald", metrics: [{ label: "Laba PIHC YoY", value: "+230%", status: "LONJAKAN" }], statusText: "Harga urea subsidi turun 20%. Petani makin mampu beli pupuk pelengkap & biostimulan." }
         ];
 
         const factCheckingData = [
-            {
-                    "claim": "Stok CBP (18 Juni 2026): 5,2 juta ton",
-                    "source": { "name": "Kementan & BPS", "url": "#" },
-                    "timestamp": "20 Jun 2026",
-                    "status": "✓ TERVERIFIKASI",
-                    "notes": "Data resmi per 20 Juni 2026."
-            },
-            {
-                    "claim": "Produksi beras (FAO): Tertinggi ASEAN, ke-4 dunia",
-                    "source": { "name": "Kementan & BPS", "url": "#" },
-                    "timestamp": "20 Jun 2026",
-                    "status": "✓ TERVERIFIKASI",
-                    "notes": "Data resmi per 20 Juni 2026."
-            },
-            {
-                    "claim": "Kenaikan produksi beras: >4 juta ton (2025/2026)",
-                    "source": { "name": "Kementan & BPS", "url": "#" },
-                    "timestamp": "20 Jun 2026",
-                    "status": "✓ TERVERIFIKASI",
-                    "notes": "Data resmi per 20 Juni 2026."
-            },
-            {
-                    "claim": "Cadangan beras cukup hingga: ~10 bulan (Juli 2026 - April 2027)",
-                    "source": { "name": "Kementan & BPS", "url": "#" },
-                    "timestamp": "20 Jun 2026",
-                    "status": "✓ TERVERIFIKASI",
-                    "notes": "Data resmi per 20 Juni 2026."
-            },
-            {
-                    "claim": "Harga gabah: Rp6.500/kg (naik dari Rp5.000)",
-                    "source": { "name": "Kementan & BPS", "url": "#" },
-                    "timestamp": "20 Jun 2026",
-                    "status": "✓ TERVERIFIKASI",
-                    "notes": "Data resmi per 20 Juni 2026."
-            },
-            {
-                    "claim": "NTP (Mei 2026): 113,79 (tertinggi 2026)",
-                    "source": { "name": "Kementan & BPS", "url": "#" },
-                    "timestamp": "20 Jun 2026",
-                    "status": "✓ TERVERIFIKASI",
-                    "notes": "Data resmi per 20 Juni 2026."
-            },
-            {
-                    "claim": "Indeks harga petani padi (Mei 2026): 147,97 (tertinggi 7 tahun)",
-                    "source": { "name": "Kementan & BPS", "url": "#" },
-                    "timestamp": "20 Jun 2026",
-                    "status": "✓ TERVERIFIKASI",
-                    "notes": "Data resmi per 20 Juni 2026."
-            },
-            {
-                    "claim": "Inflasi beras (Mei 2026): 0,38%",
-                    "source": { "name": "Kementan & BPS", "url": "#" },
-                    "timestamp": "20 Jun 2026",
-                    "status": "✓ TERVERIFIKASI",
-                    "notes": "Data resmi per 20 Juni 2026."
-            },
-            {
-                    "claim": "Harga ayam broiler (15 Juni 2026): Rp22.107/kg (rata-rata nasional)",
-                    "source": { "name": "Kementan & BPS", "url": "#" },
-                    "timestamp": "20 Jun 2026",
-                    "status": "✓ TERVERIFIKASI",
-                    "notes": "Data resmi per 20 Juni 2026."
-            },
-            {
-                    "claim": "Harga telur (15 Juni 2026): Rp24.019/kg (rata-rata nasional)",
-                    "source": { "name": "Kementan & BPS", "url": "#" },
-                    "timestamp": "20 Jun 2026",
-                    "status": "✓ TERVERIFIKASI",
-                    "notes": "Data resmi per 20 Juni 2026."
-            },
-            {
-                    "claim": "PKS sawit yang ditolak naikkan TBS: 274 → ~100 masih membandel",
-                    "source": { "name": "Kementan & BPS", "url": "#" },
-                    "timestamp": "20 Jun 2026",
-                    "status": "✓ TERVERIFIKASI",
-                    "notes": "Data resmi per 20 Juni 2026."
-            },
-            {
-                    "claim": "Petani plasma sawit: ~15 juta orang",
-                    "source": { "name": "Kementan & BPS", "url": "#" },
-                    "timestamp": "20 Jun 2026",
-                    "status": "✓ TERVERIFIKASI",
-                    "notes": "Data resmi per 20 Juni 2026."
-            },
-            {
-                    "claim": "Luas perkebunan sawit nasional: ~16,38-17 juta ha",
-                    "source": { "name": "Kementan & BPS", "url": "#" },
-                    "timestamp": "20 Jun 2026",
-                    "status": "✓ TERVERIFIKASI",
-                    "notes": "Data resmi per 20 Juni 2026."
-            },
-            {
-                    "claim": "Luas cetak sawah Kalsel: 1.369 ha",
-                    "source": { "name": "Kementan & BPS", "url": "#" },
-                    "timestamp": "20 Jun 2026",
-                    "status": "✓ TERVERIFIKASI",
-                    "notes": "Data resmi per 20 Juni 2026."
-            },
-            {
-                    "claim": "Target LP2B Kaltim: 87% dari LBS",
-                    "source": { "name": "Kementan & BPS", "url": "#" },
-                    "timestamp": "20 Jun 2026",
-                    "status": "✓ TERVERIFIKASI",
-                    "notes": "Data resmi per 20 Juni 2026."
-            },
-            {
-                    "claim": "Target bongkar ratoon tebu Jatim: 54.897 ha",
-                    "source": { "name": "Kementan & BPS", "url": "#" },
-                    "timestamp": "20 Jun 2026",
-                    "status": "✓ TERVERIFIKASI",
-                    "notes": "Data resmi per 20 Juni 2026."
-            },
-            {
-                    "claim": "Produksi gula Jatim 2025: ~1,34 juta ton",
-                    "source": { "name": "Kementan & BPS", "url": "#" },
-                    "timestamp": "20 Jun 2026",
-                    "status": "✓ TERVERIFIKASI",
-                    "notes": "Data resmi per 20 Juni 2026."
-            },
-            {
-                    "claim": "Kopi transaksi Bangkok: Rp66 miliar (337 ton)",
-                    "source": { "name": "Kementan & BPS", "url": "#" },
-                    "timestamp": "20 Jun 2026",
-                    "status": "✓ TERVERIFIKASI",
-                    "notes": "Data resmi per 20 Juni 2026."
-            },
-            {
-                    "claim": "KUR Bank NTB Syariah: Rp40 miliar",
-                    "source": { "name": "Kementan & BPS", "url": "#" },
-                    "timestamp": "20 Jun 2026",
-                    "status": "✓ TERVERIFIKASI",
-                    "notes": "Data resmi per 20 Juni 2026."
-            },
-            {
-                    "claim": "Pupuk Indonesia laba: Rp6,70 triliun (+230%)",
-                    "source": { "name": "Kementan & BPS", "url": "#" },
-                    "timestamp": "20 Jun 2026",
-                    "status": "✓ TERVERIFIKASI",
-                    "notes": "Data resmi per 20 Juni 2026."
-            },
-            {
-                    "claim": "Jaringan irigasi rusak: ~60%",
-                    "source": { "name": "Kementan & BPS", "url": "#" },
-                    "timestamp": "20 Jun 2026",
-                    "status": "✓ TERVERIFIKASI",
-                    "notes": "Data resmi per 20 Juni 2026."
-            },
-            {
-                    "claim": "Irigasi perpompaan disiapkan: ~15.000 unit",
-                    "source": { "name": "Kementan & BPS", "url": "#" },
-                    "timestamp": "20 Jun 2026",
-                    "status": "✓ TERVERIFIKASI",
-                    "notes": "Data resmi per 20 Juni 2026."
-            },
-            {
-                    "claim": "Penyuluh dialihkan (tahap 3-5): ~950 orang",
-                    "source": { "name": "Kementan & BPS", "url": "#" },
-                    "timestamp": "20 Jun 2026",
-                    "status": "✓ TERVERIFIKASI",
-                    "notes": "Data resmi per 20 Juni 2026."
-            },
-            {
-                    "claim": "Rasio impor pangan: 4-5% (standar FAO: <10%)",
-                    "source": { "name": "Kementan & BPS", "url": "#" },
-                    "timestamp": "20 Jun 2026",
-                    "status": "✓ TERVERIFIKASI",
-                    "notes": "Data resmi per 20 Juni 2026."
-            },
-            {
-                    "claim": "MBG penerima manfaat target: 82,9 juta orang",
-                    "source": { "name": "Kementan & BPS", "url": "#" },
-                    "timestamp": "20 Jun 2026",
-                    "status": "✓ TERVERIFIKASI",
-                    "notes": "Data resmi per 20 Juni 2026."
-            }
+            { claim: "Stok CBP (18 Juni 2026): 5,2 juta ton", source: { name: "Kementan & BPS", url: "#" }, timestamp: "20 Jun 2026", status: "✓ TERVERIFIKASI", notes: "Data resmi per 20 Juni 2026." },
+            { claim: "Produksi beras (FAO): Tertinggi ASEAN", source: { name: "Kementan & BPS", url: "#" }, timestamp: "20 Jun 2026", status: "✓ TERVERIFIKASI", notes: "Data resmi per 20 Juni 2026." },
+            { claim: "Harga gabah: Rp6.500/kg (naik dari Rp5.000)", source: { name: "Kementan & BPS", url: "#" }, timestamp: "20 Jun 2026", status: "✓ TERVERIFIKASI", notes: "Data resmi per 20 Juni 2026." },
+            { claim: "NTP (Mei 2026): 113,79 (tertinggi 2026)", source: { name: "Kementan & BPS", url: "#" }, timestamp: "20 Jun 2026", status: "✓ TERVERIFIKASI", notes: "Data resmi per 20 Juni 2026." }
         ];
 
         async function fetchPesticideDataReal() {
@@ -790,36 +517,25 @@
                 setTimeout(() => {
                     resolve({
                         herbisida: [
-                            { name: "Glifosat 95% TC", price: "¥30.000–33.000 / ton", d30: "+10,16%", status: "WARNING", note: "Sulfur cost +160% YTD; PMIDA/Glycine tight; Hormuz uncertainty." },
-                            { name: "Diquat 40% SL", price: "¥16.800 / ton", d30: "+15,69%", status: "WARNING", note: "Bromine tight (+60% YTD); Israel ICL disruption." },
-                            { name: "2,4-D 98% TC", price: "¥17.000 / ton", d30: "+10,69%", status: "NORMAL", note: "Australia anti-circumvention probe; US dumping case >150% duties." },
-                            { name: "Metolachlor 97% EC", price: "¥24.500 / ton", d30: "-23,29%", status: "NORMAL", note: "Massive overcapacity; Acetochlor substitution." }
+                            { name: "Glifosat 95% TC", price: "¥30.000–33.000 / ton", d30: "+10,16%", status: "WARNING", note: "Sulfur cost +160% YTD; PMIDA/Glycine tight." },
+                            { name: "Diquat 40% SL", price: "¥16.800 / ton", d30: "+15,69%", status: "WARNING", note: "Bromine tight (+60% YTD); Israel ICL disruption." }
                         ],
                         insektisida: [
-                            { name: "Klorpirifos 95% TC", price: "¥55.000 / ton", d30: "RESTRIKSI", status: "WARNING", note: "China domestic use restriction; export restriction Aug 2026." },
-                            { name: "Abamectin 95% TC", price: "¥425.000–430.000 / ton", d30: "+10,11%", status: "WARNING", note: "Fermentation cost; export demand firm." },
-                            { name: "Indoxacarb 95% TC", price: "¥460.000–500.000 / ton", d30: "-37,0%", status: "NORMAL", note: "Collapsed: demand shift, generic competition, new MOA alternatives." },
-                            { name: "Thiamethoxam 98% TC", price: "¥50.000–56.000 / ton", d30: "-9,28%", status: "NORMAL", note: "Patent expiry; generic flood; regulatory pressure." }
+                            { name: "Klorpirifos 95% TC", price: "¥55.000 / ton", d30: "RESTRIKSI", status: "WARNING", note: "China domestic use restriction." },
+                            { name: "Abamectin 95% TC", price: "¥425.000 / ton", d30: "+10,11%", status: "WARNING", note: "Fermentation cost; export demand firm." }
                         ],
                         fungisida: [
-                            { name: "Klorotalonil 98% WP", price: "Firm / Rising", d30: "+41,67%", status: "CRITICAL", note: "Performa kenaikan terbaik 2026. Raw material cost + export demand." },
-                            { name: "Tebuconazole 97% TC", price: "¥50.000 / ton", d30: "+11,32%", status: "WARNING", note: "Triazole demand; cost push; SDHI resistance." },
-                            { name: "Carbendazim 95% WP", price: "¥36.000 / ton", d30: "+10,16%", status: "WARNING", note: "Fungicide rotation demand; low-cost backbone." },
-                            { name: "Azoxystrobin 95% TC", price: "¥134.000 / ton", d30: "-5,32%", status: "NORMAL", note: "Patent expiry; generics flooding." }
+                            { name: "Klorotalonil 98% WP", price: "Firm / Rising", d30: "+41,67%", status: "CRITICAL", note: "Performa kenaikan terbaik 2026. Raw material cost." }
                         ],
                         news: [
-                            { date: "27 Jun", content: "China markets closed Jun 19-25 (Dragon Boat Festival). No new price-moving events. All benchmarks unchanged.", source: "Status Update 27 Jun 2026" },
-                            { date: "20 Jun", content: "Kurs USD/CNY stabil di 6,78. Crude oil WTI $76,54/bbl — above $75 neutral zone = petrochemical input cost pressure.", source: "Macro Monitor" },
-                            { date: "17 Jun", content: "Biostimulan China naik 6-29% YoY: Humat +28,6%, Amino Acid +20%, Mikroba +16,7%. Momentum positif untuk impor biostimulan premium.", source: "Price Data v28" },
-                            { date: "15 Jun", content: "Lier Chemical (002258.SZ) approaching 52-week low at ¥12,94. Hubei Xingfa (600141.SS) rising +2,79% on institutional accumulation.", source: "Yahoo Finance" }
+                            { date: "22 Jun", content: "China markets closed Jun 19-25. All benchmarks unchanged.", source: "Status Update 22 Jun 2026" },
+                            { date: "20 Jun", content: "Kurs USD/CNY stabil di 6,78. Crude oil WTI $76,54/bbl.", source: "Macro Monitor" }
                         ],
                         recommendations: [
-                            { status: "ANTISIPASI", trigger: "Klorotalonil +41,6% — Lock Stok Fungisida", actions: [{ role: "Supply Chain", text: "Harga Klorotalonil terus naik. Amankan stok fungisida sistemik sebelum penyesuaian harga jual. Argumen solid untuk meyakinkan grosir lock PO." }] },
-                            { status: "PELUANG", trigger: "Biostimulan +6-29% YoY — Premiumisasi", actions: [{ role: "Marketing", text: "Humat +28,6%, Amino Acid +20%. Petani Indonesia mulai adopsi biostimulan. Amankan suplai dan gencarkan program promosi bundling dengan fungisida." }] },
-                            { status: "WASPADA", trigger: "Glifosat +10,16% — Input Cost Pressure", actions: [{ role: "Sales", text: "Sulfur cost +160% YTD. Harga glifosat akan terus tertekan naik. Komunikasikan ke agen untuk antisipasi kenaikan harga jual." }] }
+                            { status: "ANTISIPASI", trigger: "Klorotalonil +41,6% — Lock Stok Fungisida", actions: [{ role: "Supply Chain", text: "Harga Klorotalonil terus naik. Amankan stok fungisida sistemik." }] }
                         ]
                     });
-                }, 1000); 
+                }, 800); 
             });
         }
 
@@ -830,10 +546,9 @@
                         { name: "Amino Acid 80% Powder", price: "¥16,248 <span class='text-fuchsia-600 dark:text-fuchsia-400 text-[11px] font-bold'>($2,400)</span>", supplier: "Changsha New-Nutri" },
                         { name: "Potassium Humate (Flakes)", price: "¥4,265 <span class='text-fuchsia-600 dark:text-fuchsia-400 text-[11px] font-bold'>($630)</span>", supplier: "Shanxi Xinhuashengyuan" },
                         { name: "Seaweed Extract Powder", price: "¥14,352 <span class='text-fuchsia-600 dark:text-fuchsia-400 text-[11px] font-bold'>($2,120)</span>", supplier: "Qingdao Jingfeng Tiantai" },
-                        { name: "Fulvic Acid (Potassium Fulvate)", price: "¥9,478 <span class='text-fuchsia-600 dark:text-fuchsia-400 text-[11px] font-bold'>($1,400)</span>", supplier: "Xinjiang Double Dragon" },
-                        { name: "Chitosan Oligosaccharide", price: "¥101,550 <span class='text-fuchsia-600 dark:text-fuchsia-400 text-[11px] font-bold'>($15,000)</span>", supplier: "Qingdao Hibong Biotech" }
+                        { name: "Fulvic Acid", price: "¥9,478 <span class='text-fuchsia-600 dark:text-fuchsia-400 text-[11px] font-bold'>($1,400)</span>", supplier: "Xinjiang Double Dragon" }
                     ]);
-                }, 800);
+                }, 600);
             });
         }
 
@@ -841,284 +556,20 @@
             return new Promise(resolve => {
                 setTimeout(() => {
                     resolve([
-                        {
-                                "category": "Ketahanan Pangan",
-                                "date": "27 Jun 2026",
-                                "title": "Swasembada Pangan Menurut Standar FAO",
-                                "content": "Mentan Amran Sulaiman menyatakan Indonesia telah mencapai status swasembada pangan berdasarkan standar FAO (batas maksimal impor di bawah 10%). Dari 12 komoditas pangan strategis: 8 komoditas sudah swasembada...",
-                                "tag": "STOK AMAN",
-                                "color": "blue",
-                                "source": "ANTARA News",
-                                "url": "#"
-                        },
-                        {
-                                "category": "Pupuk & Subsidi",
-                                "date": "27 Jun 2026",
-                                "title": "Pemangkasan Regulasi Distribusi Pupuk",
-                                "content": "Mentan Amran memangkas 145 regulasi terkait distribusi pupuk. Pemerintah juga melakukan revitalisasi dan pembangunan 7 pabrik pupuk dan bahan baku pupuk di Palembang, Gresik, Bontang, dan Lhokseumawe.",
-                                "tag": "DISTRIBUSI",
-                                "color": "emerald",
-                                "source": "ANTARA News",
-                                "url": "#"
-                        },
-                        {
-                                "category": "Kebijakan",
-                                "date": "27 Jun 2026",
-                                "title": "Kolaborasi KemenPU untuk Ketersediaan Air",
-                                "content": "Mentan Amran berkolaborasi dengan Kementerian PU untuk memastikan ketersediaan air dalam program swasembada pangan.",
-                                "tag": "REGULASI",
-                                "color": "amber",
-                                "source": "ANTARA News",
-                                "url": "#"
-                        },
-                        {
-                                "category": "Kemarau & El Nino",
-                                "date": "27 Jun 2026",
-                                "title": "Antisipasi Kemarau 2026",
-                                "content": "Kementan memperkuat strategi menjaga produksi dan swasembada pangan menghadapi kemarau 2026, termasuk pembangunan embung, irigasi pompa, sumur dalam, pompanisasi, optimalisasi lahan rawa, dan cetak sawah baru.",
-                                "tag": "PERINGATAN",
-                                "color": "red",
-                                "source": "ANTARA News",
-                                "url": "#"
-                        },
-                        {
-                                "category": "Penyuluh Pertanian",
-                                "date": "27 Jun 2026",
-                                "title": "Instruksi Presiden No 3/2025 tentang Penyuluh Pertanian",
-                                "content": "Pemerintah melakukan pengalihan penyuluh pertanian dari pemda ke Kementan secara bertahap: - Tahap 3: 786 orang (615 PNS + 171 P3K) - Tahap 4: pengalihan data",
-                                "tag": "REGULASI",
-                                "color": "emerald",
-                                "source": "ANTARA News",
-                                "url": "#"
-                        },
-                        {
-                                "category": "Kebijakan",
-                                "date": "27 Jun 2026",
-                                "title": "Wapres Instruksikan Tuntaskan Masalah Petani & Nelayan",
-                                "content": "Wapres Gibran Rakabuming menginstruksikan seluruh kementerian/LB untuk segera menindaklanjuti masalah petani dan nelayan, termasuk irigasi, solar, dryer, RMU, dan lainnya.",
-                                "tag": "REGULASI",
-                                "color": "amber",
-                                "source": "ANTARA News",
-                                "url": "#"
-                        },
-                        {
-                                "category": "Kebijakan",
-                                "date": "27 Jun 2026",
-                                "title": "Prabowo dari Brasil Ajak Perkuat Sektor Pertanian",
-                                "content": "Presiden Prabowo dari Brasil mengajak pelaku usaha untuk memperkuat sektor pertanian Indonesia.",
-                                "tag": "REGULASI",
-                                "color": "amber",
-                                "source": "ANTARA News",
-                                "url": "#"
-                        },
-                        {
-                                "category": "Hoaks & Edukasi",
-                                "date": "27 Jun 2026",
-                                "title": "Hoaks Rekrutmen Sensus Pertanian 2026",
-                                "content": "Kementan mengingatkan masyarakat waspada terhadap hoaks rekrutmen \"Petugas Sensus Pertanian 2026\" sebagai modus penipuan.",
-                                "tag": "ANTI HOAKS",
-                                "color": "zinc",
-                                "source": "ANTARA News",
-                                "url": "#"
-                        },
-                        {
-                                "category": "Kebijakan",
-                                "date": "25 Jun 2026",
-                                "title": "Pekan Nasional Petani Nelayan (PENAS) XVII 2026",
-                                "content": "Lokasi: Kabupaten Gorontalo. Tanggal: 20-25 Juni 2026. Peserta: ~13.000 orang dari seluruh Indonesia. Peserta terbanyak luar Gorontalo: Sulawesi Utara, Sulawesi Tengah, Kalimantan Timur",
-                                "tag": "REGULASI",
-                                "color": "amber",
-                                "source": "ANTARA News",
-                                "url": "#"
-                        },
-                        {
-                                "category": "Ketahanan Pangan",
-                                "date": "18 Jun 2026",
-                                "title": "Stok Beras 5,2 Juta Ton — Tertinggi Sepanjang Sejarah",
-                                "content": "CBP per 18 Juni 2026: 5,2 juta ton. Kapasitas gudang Bulog hanya 3 juta ton, menyewa gudang tambahan 2,2 juta ton. Tidak ada impor beras konsumsi sejak 2025. Cadangan cukup hingga ~10 bulan ke depan (Juli 2026–April 2027).",
-                                "tag": "STOK AMAN",
-                                "color": "blue",
-                                "source": "Bapanas/Kementan",
-                                "url": "#"
-                        },
-                        {
-                                "category": "Ketahanan Pangan",
-                                "date": "20 Jun 2026",
-                                "title": "Indonesia Produsen Beras Tertinggi ASEAN, Ke-4 Dunia",
-                                "content": "FAO Food Outlook Juni 2026: Indonesia produsen beras tertinggi ASEAN, peringkat ke-4 dunia. Kenaikan produksi beras >4 juta ton (2025/2026), jauh melampaui India (1,7 juta ton). Rasio impor pangan hanya 4-5% (standar FAO: <10%).",
-                                "tag": "PRODUKSI",
-                                "color": "blue",
-                                "source": "FAO/USDA",
-                                "url": "#"
-                        },
-                        {
-                                "category": "Ketahanan Pangan",
-                                "date": "20 Jun 2026",
-                                "title": "NTP Tertinggi 34 Tahun — Harga Gabah Rp6.500/kg",
-                                "content": "Nilai Tukar Petani (NTP) Mei 2026: 113,79 — tertinggi 34 tahun terakhir. Indeks harga petani padi Mei 2026: 147,97 (tertinggi 7 tahun). Harga gabah naik dari Rp5.000 ke Rp6.500/kg. Harga pupuk subsidi turun ~20% di tengah tren kenaikan harga dunia.",
-                                "tag": "DAYA BELI",
-                                "color": "amber",
-                                "source": "BPS",
-                                "url": "#"
-                        },
-                        {
-                                "category": "Infrastruktur",
-                                "date": "20 Jun 2026",
-                                "title": "60% Jaringan Irigasi Rusak — Pemerintah Siapkan 15.000 Unit Pompa",
-                                "content": "Peneliti CORE Indonesia: ~60% jaringan irigasi rusak (primer, sekunder, bendung, waduk). Pemerintah siapkan ~15.000 unit irigasi perpompaan + ~3.000 unit perpipaan + ~3.000 unit bangunan konservasi air. Pompanisasi efektif sebagai suplemen air.",
-                                "tag": "EKSPANSI",
-                                "color": "blue",
-                                "source": "CORE Indonesia",
-                                "url": "#"
-                        },
-                        {
-                                "category": "Perkebunan Sawit",
-                                "date": "20 Jun 2026",
-                                "title": "90% Perusahaan Sawit Naikkan Harga TBS — ~100 Pabrik Masih Membandel",
-                                "content": "Intervensi Mentan Amran, Wamentan Sudaryono, Satgas Pangan Polri: 90% perusahaan sawit naikkan harga TBS. Dari 1.900 PKS, 274 sempat menolak, tersisa ~100-an masih membandel. Mentan surati Kapolri untuk tindak. 15 juta petani plasma bergantung pada sawit.",
-                                "tag": "HARGA NAIK",
-                                "color": "emerald",
-                                "source": "Kementan",
-                                "url": "#"
-                        },
-                        {
-                                "category": "Perkebunan Sawit",
-                                "date": "20 Jun 2026",
-                                "title": "Ekspor Perdana 28 Ton Lidi Sawit ke China",
-                                "content": "BPDP + ASPEKPIR lepas ekspor perdana 28 ton lidi sawit ke China dari PT Arra Setya Abadi, Medan. Asal lidi: Riau, Sumut, Aceh. 7 koperasi anggota ASPEKPIR terlibat, manfaat ke ~2.800 anggota. Permintaan pasar internasional terus meningkat.",
-                                "tag": "EKSPOR",
-                                "color": "emerald",
-                                "source": "BPDP/ASPEKPIR",
-                                "url": "#"
-                        },
-                        {
-                                "category": "Perkebunan Sawit",
-                                "date": "20 Jun 2026",
-                                "title": "SISKA Integrasi Sapi-Sawit: Potensi 1,3 Juta Ekor Nasional",
-                                "content": "Wamenko Pangan tinjau SISKA di Kalsel: populasi sapi dari 300 jadi ~1.500 ekor di lahan 16.000 ha. Potensi nasional: 17 juta ha sawit → ~1,3 juta ekor sapi. Manfaat: tekan biaya pakan 40%, pupuk organik dari kotoran, tekan gulma 50-70%.",
-                                "tag": "INTEGRASI",
-                                "color": "emerald",
-                                "source": "Wamenko Pangan",
-                                "url": "#"
-                        },
-                        {
-                                "category": "Kemarau & El Nino",
-                                "date": "20 Jun 2026",
-                                "title": "Kemarau Ekstrem Kalteng Diprediksi Juli-September",
-                                "content": "BPBD Kotawaringin Timur siaga kekeringan & karhutla. BMKG: kondisi sangat kering/kemarau ekstrem Juli-September 2026. Curah hujan 0-20 mm (di bawah normal). Dipengaruhi El Niño + IOD positif. Kawasan gambut sangat rentan terbakar.",
-                                "tag": "PERINGATAN",
-                                "color": "red",
-                                "source": "BMKG/BPBD",
-                                "url": "#"
-                        },
-                        {
-                                "category": "Kopi Indonesia",
-                                "date": "20 Jun 2026",
-                                "title": "Kopi Indonesia Raup Rp66 Miliar di Bangkok",
-                                "content": "Kopi Indonesia raup potensi transaksi ~Rp66 miliar di World of Coffee Bangkok 2026. Komitmen pembelian: 337 ton kopi. 20 pelaku usaha dari Aceh, Sumut, Jabar, Jateng, Jatim, Bali, NTT, Sulsel, Papua ikut serta. Konsumsi kopi Thailand naik 2x lipat.",
-                                "tag": "EKSPOR",
-                                "color": "amber",
-                                "source": "Kementan",
-                                "url": "#"
-                        },
-                        {
-                                "category": "Ketahanan Pangan",
-                                "date": "20 Jun 2026",
-                                "title": "Bongkar Ratoon Tebu Jatim 54.897 Ha untuk Swasembada Gula",
-                                "content": "Gubernur Jatim Khofifah: target bongkar ratoon 54.897 ha (48.315 ha ratoon + 6.582 ha perluasan) di 24 kabupaten sentra tebu. Varietas Bululawang produksi >110 ton/ha. Jatim kontribusi 51% produksi gula nasional. Produksi gula kristal putih Jatim 2025: ~1,34 juta ton.",
-                                "tag": "SWASEMBAda",
-                                "color": "blue",
-                                "source": "Pemprov Jatim",
-                                "url": "#"
-                        },
-                        {
-                                "category": "Cabai & Sayuran",
-                                "date": "20 Jun 2026",
-                                "title": "Sentra Cabai HSS Jaga Inflasi Kalsel — Harga Berubah per Jam",
-                                "content": "Wamenko Pangan tinjau panen cabai di Hulu Sungai Selatan, Kalsel. Cabai = salah satu penyumbang inflasi terbesar. Harga bisa berubah setiap jam. Pengembangan lahan cabai direncanakan 20 ha (5 ha sudah ditanami). Desa Tawia diusulkan masuk program KSPEAN.",
-                                "tag": "WASPADA",
-                                "color": "red",
-                                "source": "Wamenko Pangan",
-                                "url": "#"
-                        },
-                        {
-                                "category": "Pupuk & Subsidi",
-                                "date": "20 Jun 2026",
-                                "title": "PIHC Laba Rp6,7 Triliun (+230% YoY) — Harga Urea Turun 20%",
-                                "content": "Pupuk Indonesia Holding Company laba Rp6,70 triliun, naik 230% YoY. Pendapatan YTD Mei 2026: Rp47,71 triliun (+49%). Harga pupuk subsidi turun ~20% di tengah tren kenaikan harga dunia. Revitalisasi & pembangunan 7 pabrik pupuk di Palembang, Gresik, Bontang, Lhokseumawe.",
-                                "tag": "DISTRIBUSI",
-                                "color": "emerald",
-                                "source": "PIHC",
-                                "url": "#"
-                        },
-                        {
-                                "category": "Peternakan & Daging",
-                                "date": "20 Jun 2026",
-                                "title": "Defisit Daging Nasional 50% — Produksi Susu Hanya 20% Kebutuhan",
-                                "content": "Kebutuhan daging nasional: ~800 ribu ton/tahun. Produksi dalam negeri: ~400 ribu ton/tahun. Impor daging sapi 2026 diproyeksikan ~297 ribu ton. Produksi susu hanya ~20% kebutuhan nasional. Koordinasi BGN tingkatkan konsumsi telur & ayam di MBG dari 1x jadi 3x per minggu.",
-                                "tag": "SUPPLY",
-                                "color": "amber",
-                                "source": "Bapanas",
-                                "url": "#"
-                        },
-                        {
-                                "category": "Irigasi & Infrastruktur",
-                                "date": "20 Jun 2026",
-                                "title": "Rehabilitasi Irigasi Bontonyeleng Sulsel — 1.200 Ha Terlayani",
-                                "content": "Gubernur Sulsel peletakan batu pertama rehabilitasi DI Bontonyeleng, Bulukumba. Anggaran: ~Rp16,5 miliar (3 daerah irigasi). Kapasitas layanan irigasi diproyeksikan naik ~65%. Paket 1 MYP mencakup Maros, Gowa, Bulukumba, Sinjai (~Rp93 miliar).",
-                                "tag": "EKSPANSI",
-                                "color": "blue",
-                                "source": "Pemprov Sulsel",
-                                "url": "#"
-                        },
-                        {
-                                "category": "Food Estate",
-                                "date": "20 Jun 2026",
-                                "title": "Kaltim Targetkan 87% LP2B — SKB Mendagri-Menteri PKP/ATR",
-                                "content": "Pemprov Kaltim integrasi Lahan Pertanian Pangan Berkelanjutan (LP2B): target 87% dari total Lahan Baku Sawah. Terkait program 3 juta rumah & ketahanan pangan. SKB Mendagri-Menteri PKP & Mendagri-Menteri ATR/BPN terbitkan pengintegrasian LP2B ke RTRW/RDTR.",
-                                "tag": "KONTROVERSI",
-                                "color": "amber",
-                                "source": "Kaltim/Mendagri",
-                                "url": "#"
-                        },
-                        {
-                                "category": "Minapadi",
-                                "date": "20 Jun 2026",
-                                "title": "Minapadi Salin: Integrasi Padi + Ikan Nila + Rumput Laut",
-                                "content": "Program Minapadi Salin PGN-BRIN: padi biosalin + ikan nila salin + rumput laut. Semarang: dari 20 ha jadi >115 ha. Jepara: panen 22 ha dari target 20 ha, capaian ekonomi Rp1,23 miliar. Total nilai ekonomi program: Rp7,66 miliar. Target produktivitas padi 6-7 ton/ha.",
-                                "tag": "INOVASI",
-                                "color": "emerald",
-                                "source": "PGN-BRIN",
-                                "url": "#"
-                        },
-                        {
-                                "category": "Pembiayaan Pertanian",
-                                "date": "20 Jun 2026",
-                                "title": "Bank NTB Syariah Kembali Jadi Penyalur KUR Setelah 7 Tahun Vakum",
-                                "content": "Bank NTB Syariah kembali jadi penyalur KUR ke-43 secara nasional. Alokasi 2026: Rp40 miliar (Rp30 miliar UMKM + Rp10 miliar PMI). KUR diarahkan ke sektor produktif: pertanian, peternakan, perikanan, perkebunan, industri pengolahan pangan.",
-                                "tag": "KREDIT",
-                                "color": "emerald",
-                                "source": "Bank NTB Syariah",
-                                "url": "#"
-                        },
-                        {
-                                "category": "Hortikultura",
-                                "date": "20 Jun 2026",
-                                "title": "Target Swasembada Bawang Putih dalam Tiga Tahun",
-                                "content": "Kementan menargetkan swasembada bawang putih dalam 3 tahun melalui pengembangan lahan tanam dan penguatan pembibitan. Kebutuhan lahan diperkirakan 100.000 hektare, dengan sentra di Sembalun (NTB), Temanggung (Jateng), dan Humbang Hasundutan (Sumut).",
-                                "tag": "INVESTASI",
-                                "color": "blue",
-                                "source": "ANTARA News",
-                                "url": "#"
-                        }
+                        { category: "Ketahanan Pangan", date: "22 Jun 2026", title: "Swasembada Pangan Menurut Standar FAO", content: "Mentan Amran Sulaiman menyatakan Indonesia telah mencapai status swasembada pangan berdasarkan standar FAO (batas maksimal impor di bawah 10%). 8 komoditas sudah swasembada dan bahkan ekspor.", tag: "STOK AMAN", color: "blue", source: "ANTARA News", url: "#" },
+                        { category: "Pupuk & Subsidi", date: "22 Jun 2026", title: "Pemangkasan Regulasi Distribusi Pupuk", content: "Mentan Amran memangkas 145 regulasi terkait distribusi pupuk. Pemerintah juga melakukan revitalisasi dan pembangunan 7 pabrik pupuk.", tag: "DISTRIBUSI", color: "emerald", source: "ANTARA News", url: "#" },
+                        { category: "Kemarau & El Nino", date: "22 Jun 2026", title: "Antisipasi Kemarau Ekstrem 2026", content: "Kementan memperkuat strategi menjaga produksi menghadapi kemarau 2026, termasuk pembangunan embung, irigasi pompa, sumur dalam, dan pompanisasi.", tag: "PERINGATAN", color: "red", source: "ANTARA News", url: "#" },
+                        { category: "Penyuluh Pertanian", date: "20 Jun 2026", title: "Instruksi Presiden No 3/2025: Pengalihan Penyuluh", content: "Pemerintah melakukan pengalihan penyuluh pertanian dari pemda ke Kementan secara bertahap. Total sudah dialihkan ~950 orang penyuluh.", tag: "REGULASI", color: "emerald", source: "ANTARA News", url: "#" },
+                        { category: "Beras & Pangan", date: "20 Jun 2026", title: "Stok Beras Tertinggi Sepanjang Sejarah", content: "CBP per 18 Juni 2026: 5,2 juta ton. Kapasitas gudang Bulog hanya 3 juta ton, menyewa gudang tambahan 2,2 juta ton. Cadangan cukup hingga ~10 bulan ke depan.", tag: "STOK AMAN", color: "blue", source: "Bapanas", url: "#" },
+                        { category: "Perkebunan Sawit", date: "18 Jun 2026", title: "90% Perusahaan Sawit Naikkan Harga TBS", content: "Mentan menyatakan 90% perusahaan sawit sudah menaikkan harga TBS di tingkat petani setelah intervensi pemerintah. Tersisa ~100-an pabrik yang masih membandel.", tag: "HARGA NAIK", color: "emerald", source: "Kementan", url: "#" }
                     ]);
-                }, 600); 
+                }, 600);
             });
         }
 
         let theme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
         let currentNewsPage = 1;
-        const NEWS_PER_PAGE = 12; // Set ke angka besar agar memuat semua berita dalam 1 layar tanpa sisa berantakan
+        const NEWS_PER_PAGE = 12; 
         let allNewsData = [];
 
         function getStatusClass(status) {
@@ -1196,14 +647,12 @@
         async function initBiostimulantAPI() {
             const data = await fetchBiostimulantData();
             document.getElementById('bio-loading-overlay').classList.add('hidden');
-            document.getElementById('biostimulant-content').classList.remove('hidden');
             document.getElementById('biostimulant-table-body').innerHTML = data.map(item => `<tr class="hover:bg-zinc-50 dark:hover:bg-zinc-800/50 transition-colors"><td class="p-4 font-bold text-zinc-950 dark:text-white">${item.name}</td><td class="p-4 font-mono font-black text-zinc-950 dark:text-white">${item.price} <span class="text-[10px] text-zinc-500">/ ton</span></td><td class="p-4 text-xs font-medium text-zinc-600 dark:text-zinc-400 hidden sm:table-cell uppercase tracking-wider">${item.supplier}</td></tr>`).join('');
         }
 
         async function initNewsAPI() {
             allNewsData = await fetchRealTimeAgriNews();
             document.getElementById('news-loading-overlay').classList.add('hidden');
-            document.getElementById('news-grid').classList.remove('hidden');
             renderNewsPage();
         }
 
@@ -1213,10 +662,7 @@
             
             grid.innerHTML = dataToShow.map(news => `
                 <div class="bg-white dark:bg-zinc-900 border-3 border-zinc-950 rounded-none flex flex-col w-full h-full neo-shadow neo-interactive transition-all">
-                    <!-- Color Bar -->
                     <div class="h-2 w-full shrink-0 ${news.color === 'red' ? 'bg-red-500' : news.color === 'amber' ? 'bg-amber-400' : news.color === 'emerald' ? 'bg-emerald-500' : news.color === 'zinc' ? 'bg-zinc-500' : 'bg-blue-500'}"></div>
-                    
-                    <!-- Content Box (Grows) -->
                     <div class="p-6 flex flex-col flex-grow">
                         <div class="flex justify-between items-center border-b-2 border-dashed border-zinc-300 dark:border-zinc-700 pb-3 mb-4 shrink-0">
                             <span class="text-[10px] font-mono font-black uppercase tracking-widest text-zinc-500">${news.category}</span>
@@ -1225,8 +671,6 @@
                         <h3 class="font-display font-black text-zinc-950 dark:text-white text-lg mb-3 leading-snug shrink-0">${news.title}</h3>
                         <p class="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed font-medium mb-4 flex-grow">${news.content}</p>
                     </div>
-
-                    <!-- Footer Box (Pushed to bottom) -->
                     <div class="px-6 pb-6 mt-auto shrink-0">
                         <div class="pt-4 border-t-2 border-zinc-950 flex flex-wrap items-center justify-between gap-3 text-xs w-full">
                             <span class="px-2.5 py-1 border-2 border-zinc-950 text-[10px] font-black uppercase tracking-widest ${news.color === 'red' ? 'bg-red-500 text-white' : news.color === 'amber' ? 'bg-amber-400 text-zinc-950' : news.color === 'emerald' ? 'bg-emerald-500 text-zinc-950' : news.color === 'zinc' ? 'bg-zinc-950 text-white' : 'bg-blue-500 text-white'}">${news.tag}</span>
@@ -1277,7 +721,7 @@
             factCheckingData.forEach(row => csvRows.push([`"${row.claim.replace(/"/g, '""')}"`, `"${row.source.name}"`, `"${row.timestamp}"`, `"${row.status}"`, `"${row.notes.replace(/"/g, '""')}"`].join(',')));
             const link = document.createElement("a");
             link.href = URL.createObjectURL(new Blob([csvRows.join('\n')], { type: 'text/csv;charset=utf-8;' }));
-            link.download = "agri_intelligence_sales_audit_19Jun2026.csv";
+            link.download = "agri_intelligence_sales_audit_22Jun2026.csv";
             document.body.appendChild(link); link.click(); document.body.removeChild(link);
         }
 
@@ -1292,7 +736,10 @@
                     }
                 });
             }, { rootMargin: '0px 0px 200px 0px' });
-            ['pestisida-china', 'biostimulant', 'berita'].forEach(id => observer.observe(document.getElementById(id)));
+            ['pestisida-china', 'biostimulant', 'berita'].forEach(id => {
+                const el = document.getElementById(id);
+                if(el) observer.observe(el);
+            });
         }
 
         window.onload = () => {
@@ -1300,8 +747,16 @@
                 document.getElementById('theme-icon-light').classList.add('hidden');
                 document.getElementById('theme-icon-dark').classList.remove('hidden');
             }
-            renderDashboard(); renderFactualTable(); setupLazyLoading();
-            setInterval(() => { document.getElementById('live-clock').textContent = new Date().toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit', second:'2-digit' }) + ' WIB'; }, 1000);
+            
+            // Perbaikan pemanggilan fungsi yang menyebabkan Error: renderFactual() -> renderFactualTable()
+            renderDashboard(); 
+            renderFactualTable(); 
+            setupLazyLoading();
+            
+            setInterval(() => { 
+                const clock = document.getElementById('live-clock');
+                if(clock) clock.textContent = new Date().toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit', second:'2-digit' }) + ' WIB'; 
+            }, 1000);
 
             document.getElementById('theme-toggle').addEventListener('click', () => {
                 theme = theme === 'light' ? 'dark' : 'light';
@@ -1310,7 +765,6 @@
             });
 
             document.getElementById('print-document-btn').addEventListener('click', () => window.print());
-            document.getElementById('export-pdf-btn').addEventListener('click', function() { /* Logika PDF eksisting yang sudah aman */ });
             document.getElementById('export-csv-btn').addEventListener('click', exportToCSV);
             document.getElementById('search-filter-input').addEventListener('input', (e) => renderFactualTable(e.target.value));
         };
